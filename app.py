@@ -12,10 +12,22 @@ st.set_page_config(
 )
 st.markdown("""
     <style>
-    .main { background-color: #0f1116; color: #f0f2f6; }
-    .stTextArea textarea { background-color: #1a1c23 !important; color: #ffffff !important; border: 1px solid #3b4252 !important; border-radius: 8px; }
-    .stMetric { background-color: #1a1c23; padding: 15px; border-radius: 10px; border-left: 5px solid #ff9933; }
-    h1 { color: #f3f4f6; font-family: 'Inter', sans-serif; font-weight: 800; }
+    /* Responsive input textarea container */
+    .stTextArea textarea { 
+        border-radius: 8px; 
+    }
+    
+    /* Responsive metric sidebar block */
+    .stMetric { 
+        padding: 15px; 
+        border-radius: 10px; 
+        border-left: 5px solid #ff9933; 
+    }
+    
+    /* FIX: Removes hardcoded light-grey text so headers automatically adapt to light/dark themes */
+    h1, h2, h3, p, span { 
+        font-family: 'Inter', sans-serif; 
+    }
     </style>
 """, unsafe_allow_html=True)
 
